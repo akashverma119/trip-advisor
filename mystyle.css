@@ -1,0 +1,80 @@
+.flex-container
+{
+    display: flex;
+    overflow: auto;
+    position: relative;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+#second-p{
+    color: rgb(108, 107, 107);
+}
+
+.flex-container div{
+    position: relative;
+    margin-right: 10px;
+}
+
+.flex-container img{
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.flex-container img:hover{
+    opacity: 70%;
+}
+
+.flex-container p{
+    margin: 0%;
+    position: absolute;
+    color: rgb(248, 243, 243);
+    bottom: 10px;
+    left: 10px;
+    font-size: 30px;
+}
+
+.left-round-button, .right-round-button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.material-symbols-outlined:hover{
+    font-variation-settings:
+    'FILL' 80,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.menu-container{
+    position: relative;
+    /* overflow-x: hidden; */
+}
+
+.left-round-button{
+    position: absolute;
+    top: 50%;
+}
+.right-round-button{
+    position: absolute;
+    top:50%;
+    right: 10px;
+}
