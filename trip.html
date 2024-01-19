@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="mystyle.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Document</title>
-    <script src="myfile.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -14,38 +15,6 @@
         <p id="second-p">Travellers' Choice Best of the best Destination</p>
         <div class="menu-container">
             <div class="flex-container" id="content">
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/39/43/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Top Destination</p>
-                </div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/39/7d/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Trending Destination</p>
-                </div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/39/b6/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Top Destination</p>
-                </div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/39/e5/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Top Destination</p>
-                </div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/3a/2b/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Top Destination</p>
-                </div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/39/43/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Top Destination</p>
-                </div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/39/7d/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Top Destination</p>
-                </div>
-                <div>
-                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/f7/39/b6/caption.jpg?w=600&h=-1&s=1" alt="">
-                    <p>Top Destination</p>
-                </div>
             </div>
             <button class="left-round-button btn" onclick="left()">
                 <span class="material-symbols-outlined">arrow_circle_left</span>
@@ -55,8 +24,22 @@
                 <span class="material-symbols-outlined">arrow_circle_right</span>
             </button>
         </div>
-            
+        <br>
+        <h1>Data</h1>
+        <button onclick="fetch()"> Data </button>
+        <table id= "table-data">
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Username</th>
+                <th>Website</th>
+                <th>Company</th>
+            </tr>
+        </table>
     </div>  
+    <script src="myfile.js"></script>
 </body>
 </html>
 
